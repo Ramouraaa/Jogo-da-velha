@@ -14,7 +14,7 @@ final = False
 next = False
 #Opções do MENU
 def Menu(mopcoes = 0):
-    print("JOGO DA VELHA v1.0.1\n")
+    print("JOGO DA VELHA v1.0.2\n")
     print("1. Jogar")
     print("2. Instruções")
     print("3. Sair")
