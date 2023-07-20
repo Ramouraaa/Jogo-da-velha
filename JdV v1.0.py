@@ -17,6 +17,7 @@ def Menu(mopcoes = 0):
     print("1. Jogar")
     print("2. Instruções")
     print("3. Sair")
+    print("\n\nVersão 1.0")
     mopcoes = int(input())
     os.system('cls') or None
     return mopcoes
