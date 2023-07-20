@@ -2,6 +2,7 @@ import os
 import random
 player1 = ""
 player2 = ""
+ajuste = "  "
 letraPlayer1 = "O"
 letraPlayer2 = "X"
 x = ""
@@ -127,7 +128,7 @@ while jogar == True:
                 else:
                     player2 += "-"
                 print("\nPlayer 1          BOT")
-                print(f" [{player1}]               [{player2}]")
+                print(f" [{player1}]            [{player2}]")
                 if player1 == "--":
                     input("Pressione ENTER para voltar ao menu...")
                 else:
@@ -137,10 +138,14 @@ while jogar == True:
             elif submenu == 2:
                 if letraPlayer1 == "X":
                     player1 += "-"
+                    if player1 == "-":
+                        ajuste = " "
+                    else:
+                        ajuste = ""
                 else:
                     player2 += "-"
                 print("\nPlayer 1          Player 2")
-                print(f"  [{player1}]               [{player2}]\n")
+                print(f"  [{player1}]             {ajuste}[{player2}]\n")
                 if player1 == "--":
                     input("Pressione ENTER para voltar ao menu...")
                 else:
@@ -163,10 +168,14 @@ while jogar == True:
             if submenu == 1:
                 if letraPlayer1 == "O":
                     player1 += "-"
+                    if player1 == "-":
+                        ajuste = " "
+                    else:
+                        ajuste = ""
                 else:
                     player2 += "-"
                 print("\nPlayer 1          BOT")
-                print(f" [{player1}]               [{player2}]")
+                print(f" [{player1}]             {ajuste}[{player2}]")
                 if player2 == "--":
                     input("Pressione ENTER para voltar ao menu...")
                 else:
@@ -176,10 +185,14 @@ while jogar == True:
             elif submenu == 2:
                 if letraPlayer1 == "O":
                     player1 += "-"
+                    if player1 == "-":
+                        ajuste = " "
+                    else:
+                        ajuste = ""
                 else:
                     player2 += "-"
                 print("Player 1          Player 2")
-                print(f"  [{player1}]               [{player2}]\n")
+                print(f"  [{player1}]             {ajuste}[{player2}]\n")
                 if player2 == "--":
                     input("Pressione ENTER para voltar ao menu...")
                 else:
@@ -194,13 +207,13 @@ while jogar == True:
             if submenu == 1:
                 print("\nEmpate!\n")
                 print("Player 1          BOT")
-                print(f" [{player1}]               [{player2}]")
+                print(f" [{player1}]             [{player2}]")
                 input("Pressione ENTER para iniciar a proxima rodada...") 
                
             if submenu == 2:
                 print("\nEmpate!\n")
                 print("Player 1          Player 2")
-                print(f"  [{player1}]               [{player2}]\n")
+                print(f"  [{player1}]             [{player2}]\n")
                 input("Pressione ENTER para iniciar a proxima rodada...")
 
             #Proxima rodada
